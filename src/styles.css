@@ -4,6 +4,12 @@ body {
   font-family: monospace;
 }
 
+.header {
+  text-align: center;
+  background-color: #ccc;
+  padding: 20px;
+}
+
 h1,
 h2,
 h3 {

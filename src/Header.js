@@ -2,8 +2,8 @@ import React from "react";
 
 function Header(props) {
   return (
-    <div>
-      <h1 />
+    <div className="header">
+      <span>A collection of react experiments</span>
       {props.children}
     </div>
   );
