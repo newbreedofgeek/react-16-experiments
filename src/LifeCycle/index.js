@@ -3,7 +3,7 @@ import Events from "./Events";
 
 export default class LifeCycle extends Component {
   state = {
-    render: true
+    render: false
   };
 
   toggleRender = () => {
