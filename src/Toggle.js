@@ -14,9 +14,9 @@ export default class Toggle extends Component {
   render() {
     return (
       <div>
-        <div>This is traditional toggle</div>
+        <div>I am a traditional toggle</div>
         {this.state.on && this.props.children}
-        <button onClick={this.toggle}>show / hide</button>
+        <button onClick={this.toggle}>show / hide some content</button>
       </div>
     );
   }

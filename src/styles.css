@@ -1,4 +1,46 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
+body {
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
+}
+
+h1,
+h2,
+h3 {
+  margin: 3px;
+  padding: 0;
+}
+
+h1 {
+  text-decoration: underline;
+}
+
+table,
+tr,
+td {
+  border: solid 1px;
+}
+
+.experiment {
+  background-color: lightyellow;
+  padding: 20px;
+}
+
+.entity {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.entity h2,
+.entity h3 {
+  flex: 0 0 100%;
+}
+
+.entity > div {
+  border: solid 1px black;
+  margin: 5px;
+  padding: 5px;
+  min-width: 250px;
 }
