@@ -16,7 +16,8 @@ export default class Context extends Component {
           <h1>3. Context</h1>
           <h2>
             A new Context API lets you declaratively pass props down to children
-            without the need to explicitly passing it between children
+            without the need for explicitly passing them to children (i.e. prop
+            drilling)
           </h2>
 
           <ContextProvider>
