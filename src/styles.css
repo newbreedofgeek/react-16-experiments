@@ -72,3 +72,56 @@ td {
   padding: 5px;
   min-width: 250px;
 }
+
+.turnSquare {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 50px;
+  color: #fff;
+  text-align: center;
+  transform: rotate(0deg);
+}
+
+.turnSquare.left {
+  animation: rollLeft 2s infinite linear;
+}
+
+.turnSquare.right {
+  animation: rollRight 2s infinite linear;
+}
+
+@keyframes rollLeft {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes rollRight {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.foldDiv {
+  background-color: #ccc;
+  width: 300px;
+  padding: 5px;
+  transition: height 1s;
+}
+
+.foldDiv.up {
+  height: 50px;
+  overflow: hidden;
+}
+
+.foldDiv.down {
+  height: 200px;
+  overflow: scroll;
+}
