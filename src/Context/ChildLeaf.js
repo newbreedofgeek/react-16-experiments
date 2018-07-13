@@ -1,0 +1,13 @@
+import React, { Component } from "react";
+import { MyContext } from "./ContextProvider";
+
+export default props => (
+  <MyContext.Consumer>
+    {val => (
+      <div>
+        I'm the leaf component, I got "{val}" from context
+        {props.children}
+      </div>
+    )}
+  </MyContext.Consumer>
+);

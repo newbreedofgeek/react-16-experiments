@@ -3,6 +3,8 @@ import ReactDOM from "react-dom";
 import Header from "./Header";
 import Menu from "./Menu";
 import RenderProps from "./RenderProps";
+import PortalExample from "./PortalExample";
+import Context from "./Context";
 
 import "./styles.css";
 
@@ -15,6 +17,8 @@ class App extends Component {
         </Header>
 
         <RenderProps />
+        <PortalExample />
+        <Context />
       </Fragment>
     );
   }
