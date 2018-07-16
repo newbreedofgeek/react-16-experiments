@@ -6,6 +6,7 @@ import RenderProps from "./RenderProps";
 import PortalExample from "./PortalExample";
 import Context from "./Context";
 import LifeCycle from "./LifeCycle";
+import StyledComponents from "./StyledComponents";
 
 import "./styles.css";
 
@@ -21,6 +22,7 @@ class App extends Component {
         <PortalExample />
         <Context />
         <LifeCycle />
+        <StyledComponents />
       </StrictMode>
     );
   }
