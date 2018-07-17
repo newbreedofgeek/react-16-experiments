@@ -10,7 +10,7 @@ A code sandbox react 16.3.2 project where I play around with some cool react fea
 - Context API
 - New LifeCycle
 - AsyncMode
-- Higer Order Component Pattern
+- Higher Order Component Pattern
 ```
 
 #### React Libs
