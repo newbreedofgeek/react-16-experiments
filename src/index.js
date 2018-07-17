@@ -7,6 +7,7 @@ import PortalExample from "./PortalExample";
 import Context from "./Context";
 import LifeCycle from "./LifeCycle";
 import StyledComponents from "./StyledComponents";
+import HigherOrderComponent from "./HigherOrderComponent";
 
 import "./styles.css";
 
@@ -23,6 +24,7 @@ class App extends Component {
         <Context />
         <LifeCycle />
         <StyledComponents />
+        <HigherOrderComponent />
       </StrictMode>
     );
   }
