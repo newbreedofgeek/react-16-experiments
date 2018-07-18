@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from "react";
+import { Button } from "../StyledComponents";
 import ContactApp from "./ContactApp";
 
 export default class HigerOrderComponent extends Component {
@@ -35,7 +36,7 @@ export default class HigerOrderComponent extends Component {
             the original component.
           </h2>
 
-          <button onClick={this.toggleApp}>Load / Reload App</button>
+          <Button onClick={this.toggleApp}>Load / Reload App</Button>
           {this.state.app && <ContactApp />}
         </div>
       </Fragment>

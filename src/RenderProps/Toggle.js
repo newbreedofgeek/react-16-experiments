@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Button } from "../StyledComponents";
 
 export default class Toggle extends Component {
   state = {
@@ -16,7 +17,7 @@ export default class Toggle extends Component {
       <div>
         <div>I am a traditional toggle</div>
         {this.state.on && this.props.children}
-        <button onClick={this.toggle}>show / hide some content</button>
+        <Button onClick={this.toggle}>show / hide some content</Button>
       </div>
     );
   }

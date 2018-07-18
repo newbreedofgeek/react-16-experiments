@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Button } from "../StyledComponents";
 export const MyContext = React.createContext();
 
 export default class ContextProvider extends Component {
@@ -17,7 +18,7 @@ export default class ContextProvider extends Component {
 
     return (
       <MyContext.Provider value={this.state.theme}>
-        <button onClick={this.toggleTheme}>Toggle theme context</button>
+        <Button onClick={this.toggleTheme}>Toggle theme context</Button>
         {children}
       </MyContext.Provider>
     );

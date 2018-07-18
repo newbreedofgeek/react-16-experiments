@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from "react";
+import { Button } from "../StyledComponents";
 import Events from "./Events";
 
 export default class LifeCycle extends Component {
@@ -21,7 +22,7 @@ export default class LifeCycle extends Component {
             Keep an eye on the console and click button below. It will show you
             the lifecycle order.
           </h2>
-          <button onClick={this.toggleRender}>Render new Component</button>
+          <Button onClick={this.toggleRender}>Render new Component</Button>
           {this.state.render && <Events />}
         </div>
       </Fragment>

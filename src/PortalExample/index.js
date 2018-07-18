@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from "react";
+import { Button } from "../StyledComponents";
 import Portal from "./Portal";
 
 export default class PortalExample extends Component {
@@ -25,9 +26,9 @@ export default class PortalExample extends Component {
           </h2>
 
           <div className="entity">
-            <button onClick={this.togglePortal}>
+            <Button onClick={this.togglePortal}>
               Load / destroy the portal
-            </button>
+            </Button>
 
             {this.state.load && (
               <Portal>

@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from "react";
+import { Button } from "../StyledComponents";
 import Toggle from "./Toggle";
 import ToggleRenderProps from "./ToggleRenderProps";
 
@@ -42,9 +43,9 @@ export default class RenderProps extends Component {
                 <div>
                   <div>I am a simple div that gets shown:</div>
                   {on && <div>Showing...</div>}
-                  <button onClick={toggle}>
+                  <Button onClick={toggle}>
                     I am a toggle button (show / hide)
-                  </button>
+                  </Button>
                 </div>
               )}
             </ToggleRenderProps>

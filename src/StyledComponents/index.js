@@ -1,10 +1,10 @@
 import React, { Component, Fragment } from "react";
 import styled, { css } from "styled-components";
 
-const Button = styled.button`
+export const Button = styled.button`
   border-radius: 3px;
   padding: 1em 1em;
-  margin: 0 1em;
+  margin: 1em;
   background: transparent;
   color: palevioletred;
   border: 2px solid palevioletred;
