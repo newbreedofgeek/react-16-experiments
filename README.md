@@ -1,6 +1,6 @@
 # React 16 Experiments
 
-A code sandbox react 16.3.2 project where I play around with some cool react features.
+A code sandbox react 16.6.0 project where I play around with some cool react features.
 
 ### inclues experiments on:
 #### React Core
@@ -8,7 +8,7 @@ A code sandbox react 16.3.2 project where I play around with some cool react fea
 - Render Props Pattern
 - Portals
 - Context API
-- New LifeCycle
+- New LifeCycle [worked in 16.3.2 - broke in 16.6.0, need to investigate]
 - AsyncMode
 - Higher Order Component Pattern
 ```
