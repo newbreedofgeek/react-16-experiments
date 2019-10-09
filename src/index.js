@@ -36,6 +36,7 @@ const ItemHOCWrapper = Wrapped => {
 const ItemHOCA = ItemHOCWrapper(ItemA);
 const ItemHOCB = ItemHOCWrapper(ItemB);
 const Comps = [ItemHOCA, ItemHOCB];
+const CompsAlt = [<ItemHOCA />, <ItemHOCB />];
 // E: An example of 2 alternate ways to render HOCs
 
 class App extends Component {
@@ -59,7 +60,11 @@ class App extends Component {
         <ItemHOCB />
 
         {/* alternate way  */}
-        {Comps[1]()}
+        {Comps[0]()}
+
+        {/* another way  */}
+        {CompsAlt[1]}
+
         {/* An example of 2 alternate ways to render HOCs  */}
       </StrictMode>
     );
