@@ -11,6 +11,33 @@ import HigherOrderComponent from "./HigherOrderComponent";
 
 import "./styles.css";
 
+function ItemA() {
+  return <div>ItemA</div>;
+}
+
+function ItemB() {
+  return <div>ItemB</div>;
+}
+
+const ItemHOCWrapper = Wrapped => {
+  const WithWrap = props => {
+    return (
+      <>
+        i've wrapped...
+        <Wrapped {...props} />
+      </>
+    );
+  };
+
+  return WithWrap;
+};
+
+// S: An example of 2 alternate ways to render HOCs (see below in render)
+const ItemHOCA = ItemHOCWrapper(ItemA);
+const ItemHOCB = ItemHOCWrapper(ItemB);
+const Comps = [ItemHOCA, ItemHOCB];
+// E: An example of 2 alternate ways to render HOCs
+
 class App extends Component {
   render() {
     return (
@@ -25,6 +52,15 @@ class App extends Component {
         <LifeCycle />
         <StyledComponents />
         <HigherOrderComponent />
+
+        {/* An example of 2 alternate ways to render HOCs  */}
+        {/* normal way  */}
+        <ItemHOCA />
+        <ItemHOCB />
+
+        {/* alternate way  */}
+        {Comps[1]()}
+        {/* An example of 2 alternate ways to render HOCs  */}
       </StrictMode>
     );
   }
